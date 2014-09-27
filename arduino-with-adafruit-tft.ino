@@ -86,12 +86,10 @@ void loop()
   {
     running = !running;
   }
-
   if (BUTTON_DOWN == button)
   {
     ++trackIndex;
   }
-
   if (BUTTON_UP == button)
   {
     --trackIndex;
@@ -105,9 +103,9 @@ void refresh()
 {
   tft.fillScreen(BACKGROUND_COLOR);
 
-  drawStatus();
-
   drawTitle();
+
+  drawStatus();
 
   drawTrackList();
 }
