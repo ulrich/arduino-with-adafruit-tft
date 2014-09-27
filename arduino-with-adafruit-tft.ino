@@ -85,23 +85,19 @@ void loop()
   if (BUTTON_SELECT == button)
   {
     running = !running;
-
-    refresh();
   }
 
   if (BUTTON_DOWN == button)
   {
     ++trackIndex;
-
-    refresh();
   }
 
   if (BUTTON_UP == button)
   {
     --trackIndex;
-
-    refresh();
   }
+  refresh();
+
   delay(100);
 }
 
